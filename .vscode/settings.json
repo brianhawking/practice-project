@@ -1,0 +1,42 @@
+{
+  "jest.autoEnable": false,
+  // We want linters to take over
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  // Set the default
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[css]": {
+    "editor.formatOnSave": true
+  },
+  "[scss]": {
+    "editor.formatOnSave": true
+  },
+  "[markdown]": {
+    "editor.formatOnSave": true
+  },
+  "[markdownreact]": {
+    "editor.formatOnSave": true
+  },
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  // TailwindCSS but also in `classNames` and `clsx`
+  "tailwindCSS.experimental.classRegex": [
+    ["classNames\\(([^)]*)\\)", "'([^']*)'", "\"([^']*)\""],
+    ["clsx\\(([^)]*)\\)", "'([^']*)'", "\"([^']*)\""]
+  ],
+  "remote.SSH.defaultForwardedPorts": [
+    {"localPort": 8000, "remotePort": 8000, "name": "Gatsby"},
+    {"localPort": 25252, "remotePort": 25252, "name": "Gatsby Status Port"}
+  ]
+}
